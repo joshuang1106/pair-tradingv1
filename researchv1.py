@@ -1,8 +1,3 @@
-# =========================
-# Pairs MR backtest with entry/exit dots & per-trade PnL
-# =========================
-# Requirements: pip install yfinance pandas numpy statsmodels matplotlib
-
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -213,4 +208,5 @@ def run_one_pair(tickers=TICKERS, start=START_DATE, end=END_DATE):
 # Run
 if __name__ == "__main__":
     bt_df, trades_df = run_one_pair()
+
 
